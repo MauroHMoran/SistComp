@@ -78,11 +78,11 @@ Teóricamente, el tiempo de ejecución es inversamente proporcional a la frecuen
 
 ### 2. Aceleración por Hardware (FPU)
 El ESP32 cuenta con una Unidad de Punto Flotante (FPU). Sin embargo, la diferencia abismal entre los tiempos de enteros (~80 ms) y floats (>4000 ms) demuestra la complejidad intrínseca de las operaciones decimales.
-* [cite_start]Las operaciones con **enteros** son órdenes de magnitud más rápidas ya que requieren menos ciclos de reloj por instrucción[cite: 32].
-* [cite_start]Para los **doubles** (que no poseen aceleración por hardware en este chip), se esperaría un tiempo aún mayor que el de los floats[cite: 32].
+* Las operaciones con **enteros** son órdenes de magnitud más rápidas ya que requieren menos ciclos de reloj por instrucción.
+* Para los **doubles** (que no poseen aceleración por hardware en este chip), se esperaría un tiempo aún mayor que el de los floats.
 
 ### 3. Conclusión de la prueba
-Se confirma que el aumento de la frecuencia de trabajo disminuye el tiempo de ejecución de tareas intensivas. [cite_start]Para aplicaciones de ingeniería que requieran procesamiento de señales en tiempo real (como el análisis de armónicos o control de motores), es crítico operar a frecuencias más altas (ej. 160 MHz o 240 MHz) para garantizar que los tiempos de respuesta sean mínimos[cite: 32, 325, 328].
+Se confirma que el aumento de la frecuencia de trabajo disminuye el tiempo de ejecución de tareas intensivas. Para aplicaciones de ingeniería que requieran procesamiento de señales en tiempo real (como el análisis de armónicos o control de motores), es crítico operar a frecuencias más altas (ej. 160 MHz o 240 MHz) para garantizar que los tiempos de respuesta sean mínimos.
 
 
 

@@ -65,7 +65,7 @@ Los resultados obtenidos fueron los siguientes:
 | :--- | :--- | :--- |
 |Composite|$303,5$|$414,16$|
 |Monte Carlo|$67,31$|$122,28$|
-|Fast Fourier Transform | $113,85 $| $135,47$|
+|Fast Fourier Transform | $113,85$| $135,47$|
 |Spars Matrix Multiply|$340,68$|$528,63$|
 |Dense LU MAtrix Factorization|$426,74$|$367,27$|
 |Jacobi Successive Over-Relaxation|$568,92$|$920,52$|
@@ -92,7 +92,7 @@ Tomando como pivote el rendimiento del AMD Ryzen 9 5900X, calculamos la eficienc
 
 |Procesador|Speedup |Cores |Eficiencia (Speedup / Cores)|
 | :--- | :--- | :--- | :--- |
-|AMD Ryzen 9 5900X |$1$|$12$|1/12=0,0833$|
+|AMD Ryzen 9 5900X |$1$|$12$|$1/12=0,0833$|
 |Intel Core i5-13600K| $1,0555$ | $14$|$1,0555/14=0,0754$|
 |AMD Ryzen 9 7950X| $1,52$ |$16$| $1,52/16=0,095$|
 
@@ -136,7 +136,7 @@ El ESP32 cuenta con una Unidad de Punto Flotante (FPU). Sin embargo, la diferenc
 * Para los **doubles** (que no poseen aceleración por hardware en este chip), se esperaría un tiempo aún mayor que el de los floats.
 
 ### Conclusión 
-Se confirma que el aumento de la frecuencia de trabajo disminuye el tiempo de ejecución de tareas intensivas. Para aplicaciones de ingeniería que requieran procesamiento de señales en tiempo real (como el análisis de armónicos o control de motores), es crítico operar a frecuencias más altas (ej. 160 MHz o 240 MHz) para garantizar que los tiempos de respuesta sean mínimos[cite: 32, 325, 328].
+Se confirma que el aumento de la frecuencia de trabajo disminuye el tiempo de ejecución de tareas intensivas. Para aplicaciones de ingeniería que requieran procesamiento de señales en tiempo real (como el análisis de armónicos o control de motores), es crítico operar a frecuencias más altas (ej. 160 MHz o 240 MHz) para garantizar que los tiempos de respuesta sean mínimos.
 
 
 ---
@@ -170,9 +170,9 @@ $ nano nombreArchivo.c
 ![alt text](<Consigna 4/Imagenes/image-1.png>)
 
 
-1. Repetimos con el segundo codigo
+5. Repetimos con el segundo codigo
 
-2. Corremos el programa con:
+6. Corremos el programa con:
 
 ```
 $ cgc -pg nombreArchivo1.c nombreArchivo2.c -o mi_programa
